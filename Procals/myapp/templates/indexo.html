@@ -1,0 +1,48 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Procols</title>
+        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="{% static "css/main.css" %}">
+    </head>
+    <body>
+        {% include "navbar.html" %}
+
+
+        <section class="hero text-center d-flex align-items-center justify-content-center">
+            <div class="container">
+              <h1>Empowering Your Final Year Projects</h1>
+              <p>Innovative solutions tailored for academic excellence.</p>
+              <a href="/register" class="btn btn-primary">Free Consultation</a>
+            </div>
+          </section>
+        
+          <!-- Features Section -->
+          <section class="features py-5">
+            <div class="container">
+              <div class="row text-center">
+                <div class="col-md-4">
+                  <h3>Custom Projects</h3>
+                  <p>Projects tailored to your course requirements and preferences.</p>
+                </div>
+                <div class="col-md-4">
+                  <h3>End-to-End Support</h3>
+                  <p>Comprehensive assistance from ideation to implementation.</p>
+                </div>
+                <div class="col-md-4">
+                  <h3>Innovative Tech</h3>
+                  <p>Access to cutting-edge technologies and real-world solutions.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+{% include "footer.html" %}
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
